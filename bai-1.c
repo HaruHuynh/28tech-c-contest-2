@@ -6,7 +6,7 @@ int main () {
     long long n;
     scanf("%lld", &n);
     long long sum = 0;
-    for(long long i=0;i<=n;i++) {
+    for(long long i = 3; i <= n; i += 3) {
         sum += i;
     }
     printf("%lld", sum);
