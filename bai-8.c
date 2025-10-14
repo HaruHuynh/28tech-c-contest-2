@@ -7,8 +7,11 @@
 int main () {
     long long n;
     scanf("%lld", &n);
-    for(long long i = 1;i*i<=n;i++) {
-        printf("%lld ", i*i);
+    for(int i=1;i<=sqrt(n);i++){
+        printf("%lld ", 1ll * i*i);
     }
+    // for(long long i = 1;i*i<=n;i++) {
+    //     printf("%lld ", i*i);
+    // }
     return 0;
 }

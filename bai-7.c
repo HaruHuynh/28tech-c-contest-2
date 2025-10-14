@@ -6,16 +6,16 @@ int main() {
     long long n;
     scanf("%lld", &n);
     int dem = 0;
-    for(long long i=1;i<=n;i++){
+    for(int i=1;i<=n;i++){
         if(n % i == 0){
             dem++;
         }
     }
     printf("%d\n", dem);
-    
-    for(long long i=1;i<=n;i++){
+
+    for(int i=1;i<=n;i++){
         if(n % i == 0){
-            printf("%lld ", i);
+            printf("%d ", i);
         }
     }
 }

@@ -5,11 +5,11 @@
 int main () {
     int n;
     scanf("%d\n", &n);
-    int x; 
     int found = 0;
     for(int i = 1;i<=n;i++) {
-        scanf("%d", &x);
-        if(x == 2022){
+        int tmp; 
+        scanf("%d", &tmp);
+        if(tmp == 2022){
             found = 1;
         }
     }
