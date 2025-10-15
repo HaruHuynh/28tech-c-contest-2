@@ -6,7 +6,7 @@ int main() {
     scanf("%lld", &n);
     long long giaithua = 1;
     for(long long i=1;i<=n;i++){
-            giaithua *= i;
+        giaithua *= i;
     }
     printf("%lld", giaithua);
     return 0;
