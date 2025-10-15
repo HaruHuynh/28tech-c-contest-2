@@ -8,27 +8,41 @@ int main() {
     if(n<2){
         printf("-1");
         return 0;
+    }else{ // Cách 1
+        printf("%d\n", n/2);
+        if(n % 2 == 0){
+            for(int i=1;i<n/2;i++){
+                printf("2 ");
+            }
+        }else{
+            for(int i=1;i<n/2-1;i++){
+                printf("2 ");
+            }
+            printf("3");
+        }
     }
+    return 0;
 
-    int count;
-    if (n % 2 == 0){
-        count = n / 2;
-    }else{
-        count = (n - 3)/2+1;
-    }
-    printf("%d\n", count);
+    // Cách 2
+    // int count;
+    // if (n % 2 == 0){
+    //     count = n / 2;
+    // }else{
+    //     count = (n - 3)/2+1;
+    // }
+    // printf("%d\n", count);
     
-    if (n % 2 == 0) {
-        while(n > 0){
-            printf("2 ");
-            n -= 2;
-        }
-    }else{
-        int sole = (n - 3)/2;
-        while(sole > 0){
-            printf("2 ");
-            sole--;
-        }
-        printf("3");
-    }
+    // if (n % 2 == 0) {
+    //     while(n > 0){
+    //         printf("2 ");
+    //         n -= 2;
+    //     }
+    // }else{
+    //     int sole = (n - 3)/2;
+    //     while(sole > 0){
+    //         printf("2 ");
+    //         sole--;
+    //     }
+    //     printf("3");
+    // }
 }

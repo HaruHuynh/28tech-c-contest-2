@@ -4,7 +4,7 @@ int main () {
     long long n;
     scanf("%lld", &n);
     int dem = 0;
-    while(n>0){
+    while(n!=0){
         int digit = n % 10;
         if(digit == 2 || digit == 3 || digit == 5 || digit == 7) {
             dem++;
@@ -12,4 +12,5 @@ int main () {
         n/=10;
     }
     printf("%d", dem);
+    return 0;
 }
