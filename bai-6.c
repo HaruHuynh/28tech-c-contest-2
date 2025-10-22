@@ -9,15 +9,11 @@ int main() {
     for(int i=1;i<=sqrt(n);i++){
         if(n % i == 0){
             tong += i;
-        if(i != n/i){
-            tong += n/i;
-        }
-        //    if (i == n/i) {
-        //         tong += i;// số chính phương, chỉ cộng 1 lần
-        //     } else {
-        //         tong += i + n / i; // cộng cả cặp ước
-        //     }
+            if(i != n/i){ // Loai bo truong hop so chinh phuong (VD: 4=4)
+                tong += n/i; //Uoc con lai
+            }
         }
     }
     printf("%lld", tong);
+    return 0;
 }
